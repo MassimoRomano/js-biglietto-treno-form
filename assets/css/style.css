@@ -1,79 +1,85 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.d-flex{
+.d-flex {
     display: flex;
 }
 
-.row{
+.row {
     flex-direction: row;
 }
 
-.beetween{
+.beetween {
     justify-content: space-between;
 }
 
-.column{
+.column {
     flex-direction: column;
     gap: 5px;
 }
 
-.item{
-    align-items: center;
+.item {
+    align-items: first baseline;
 }
 
-.space{
+.gap{
+    gap: 50px;
+}
+
+
+.space {
     padding-bottom: 30px;
 }
 
-body{
+body {
     background-image: url(../img/Winter_Trains_Locomotive_Snow_Night_538612_1920x1080.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    overflow-y: hidden;
 }
 
-h1{
+h1 {
     text-align: center;
     margin: 40px 0;
     color: red;
 }
 
-.contain{
+.contain {
     width: 90%;
     max-width: 1200px;
     margin: auto;
 }
 
-.bg-contanitor{
-box-sizing: border-box;
-background-color: rgb(255, 255, 255);
-border-radius: 20px;
-width: 80%;
-margin: auto;
-text-align: center;
-height: 300px;
-border: solid 2px black;
-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.404);
-padding: 80px;
+.contanitor {
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    height: 300px;
+    border: solid 2px black;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.404);
+    padding: 80px;
 }
 
 
-label{
+label {
     font-size: 20px;
 }
 
-input{
+input {
     width: 200px;
     height: 25px;
     text-align: center;
 }
 
 
-button{
+button {
     height: 30px;
     width: 150px;
     margin-right: 30px;
@@ -81,8 +87,48 @@ button{
     color: white;
 }
 
-select{
+select {
     width: 200px;
     height: 25px;
     text-align: center;
+}
+
+
+.contanitor-pass {
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    margin: auto;
+    height: 300px;
+    border: solid 2px black;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.404);
+    padding: 35px;
+
+}
+
+
+#form{
+   border: 1px solid rgb(184, 183, 183);
+   border-right: none;
+   height: 200px;
+
+   >h3{
+    font-weight: bold;
+    font-size: 25px;
+    padding-top: 20px;
+    padding-left: 20px;
+    background-color: grey;
+    width: 250px;
+    height: 100%;
+   }
+
+   >p{
+    font-weight: bold;
+    font-size: 18px;
+   }
+}
+
+span{
+    font-size: 20px;
+    font-weight: lighter;
 }
