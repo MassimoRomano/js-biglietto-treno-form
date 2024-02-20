@@ -18,6 +18,8 @@ const Carrozza = Math.random()* 100
 const CodCP = Math.random()* 100000000
 //const for random CodCP
 
+
+
 console.log(Name, Km, Age);
 
 const forKm = 0.21 ;
@@ -32,18 +34,24 @@ const discountMax = fullPrice *  0.4;
 
 if(Age < 18){
     price = (fullPrice - discountMin).toFixed(2);
+    document.getElementById("ticket-disc").innerHTML = 'Sconto Minori'
 }
-//price for <18
+//price with discount 20% for <18
 
 else if (Age > 65){
     price = (fullPrice - discountMax).toFixed(2);
+    document.getElementById("ticket-disc").innerHTML = 'Sconto Senior'
+
 }
-//price for >65
+//price with discount 40% for >65
 
 else{
     price = fullPrice.toFixed(2);
+    document.getElementById("ticket-disc").innerHTML = 'Biglietto standard'
 }
 // full price
+
+let totalPrice = price
 
 
 
@@ -53,7 +61,13 @@ console.log(`price: ${price} €`);
 document.getElementById("ticket-name").innerText = Name;
 document.getElementById("ticket-pos").innerText = Carrozza.toFixed();
 document.getElementById("ticket-codCP").innerText = CodCP.toFixed();
-document.getElementById("ticket-price").innerText = price
+document.getElementById("ticket-price").innerText = `price: ${price} €` ;
 })
 
 
+const btnCancel = document.querySelector('#btnCancel')
+btnCancel.addEventListener('click', function() {
+    userName.value = null;
+    userKm.value = null;
+    userAge.value = null;
+})
