@@ -3,13 +3,13 @@ console.log("funziona");
 const btnElement = document.querySelector('#btnCalc')
 btnElement.addEventListener('click', function() {
 
-const Name = document.getElementsByClassName("userName") ;
+const Name = document.getElementById("userName") ;
 //take input by usarName class
 
-const Km = document.getElementsByClassName("userKm").value ;
+const Km = document.getElementById("userKm").value ;
 //take input number by userKm class
 
-const Age = document.getElementsByClassName("userAge").value ;
+const Age = document.getElementById("userAge").value ;
 //take input number by userAge class
 
 console.log(Name, Km, Age);
