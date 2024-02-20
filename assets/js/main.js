@@ -37,6 +37,7 @@ else{
 }
 // full price
 console.log(Name, Km, Age)
+console.log(price)
 })
 
 

@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.row{
+    flex-direction: row;
+}
+
+.beetween{
+    justify-content: space-between;
+}
+
+.column{
+    flex-direction: column;
+    gap: 5px;
+}
+
+.item{
+    align-items: center;
+}
+
+.space{
+    padding-bottom: 30px;
+}
+
+body{
+    background-image: url(../img/Winter_Trains_Locomotive_Snow_Night_538612_1920x1080.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+h1{
+    text-align: center;
+    margin: 40px 0;
+    color: red;
+}
+
+.contain{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.bg-contanitor{
+box-sizing: border-box;
+background-color: rgb(255, 255, 255);
+border-radius: 20px;
+width: 80%;
+margin: auto;
+text-align: center;
+height: 300px;
+border: solid 2px black;
+box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.404);
+padding: 80px;
+}
+
+
+label{
+    font-size: 20px;
+}
+
+input{
+    width: 200px;
+    height: 25px;
+    text-align: center;
+}
+
+
+button{
+    height: 30px;
+    width: 150px;
+    margin-right: 30px;
+    background-color: rgba(0, 132, 255, 0.966);
+    color: white;
+}
+
+select{
+    width: 200px;
+    height: 25px;
+    text-align: center;
+}

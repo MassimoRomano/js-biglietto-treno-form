@@ -9,21 +9,35 @@
 </head>
 
 <body>
-    <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
-    <label for="name">Nome e Cognome</label>
-    <input class="userName" type="text" name="Nome e Cognome" id="">
-    <label for="name">Km da percorrer:</label>
-    <input class="userKm" type=" text" name="Km da percorrere" id="">
-    <label for="name">Fascia d'eta':</label>
-    <select class="userAge" name="Fascia d'eta'">
-        <option value="">17</option>
-        <option value=""> 25</option>
-        <option value="">66</option>
-    </select>
+    <div class="contain">
+        <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+        <section class="bg-contanitor">
+            <div class="contanitor">
+                <div class="d-flex row beetween item">
+                    <div class="d-flex column space">
+                        <label for="name">Nome e Cognome</label>
+                        <input class="userName" type="text" name="Nome e Cognome" id="">
+                    </div>
+                    <div class="d-flex column space">
+                        <label for="name">Km da percorrere</label>
+                        <input class="userKm" type=" text" name="Km da percorrere" id="">
+                    </div>
+                    <div class="d-flex column space">
+                        <label for="name">Fascia d'eta'</label>
+                        <select class="userAge" name="Fascia d'eta'">
+                            <option value="">17</option>
+                            <option value=""> 25</option>
+                            <option value="">66</option>
+                        </select>
+                    </div>
+                </div>
 
-    <button id="btnCalc" type="button">Calcola</button>
-    <button id="btnCancel" type="button">Cancella</button>
-
+                <button id="btnCalc" type="button">Calcola</button>
+                <button id="btnCancel" type="button">Cancella</button>
+            </div>
+        </section>
+    </div>
+    
 
 
 
