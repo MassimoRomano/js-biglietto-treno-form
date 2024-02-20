@@ -7,3 +7,6 @@ const Name = document.getElementsByClassName("userName")
 
 const Km = document.getElementsByClassName("userKm").value
 //take input number by userKm class
+
+const Age = document.getElementsByClassName("userAge").value
+//take input number by userAge class
