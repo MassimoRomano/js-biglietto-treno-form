@@ -12,6 +12,8 @@ const Km = document.getElementsByClassName("userKm").value ;
 const Age = document.getElementsByClassName("userAge").value ;
 //take input number by userAge class
 
+console.log(Name, Km, Age);
+
 const forKm = 0.21 ;
 //price for k
 const fullPrice = forKm * Km
@@ -36,8 +38,7 @@ else{
     price = fullPrice.toFixed(2)
 }
 // full price
-console.log(Name, Km, Age)
-console.log(price)
+console.log(`price: ${price} €`);
 })
 
 
