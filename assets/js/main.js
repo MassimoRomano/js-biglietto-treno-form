@@ -24,7 +24,7 @@ console.log(Name, Km, Age);
 
 const forKm = 0.21 ;
 //price for k
-const fullPrice = forKm * Km;
+let fullPrice = forKm * Km;
 //full price
 const discountMin = fullPrice *  0.2;
 //discount del 20%
@@ -33,35 +33,35 @@ const discountMax = fullPrice *  0.4;
 
 
 if(Age < 18){
-    price = (fullPrice - discountMin).toFixed(2);
+    fullPrice -=  (discountMin).toFixed(2);
     document.getElementById("ticket-disc").innerHTML = 'Sconto Minori'
 }
 //price with discount 20% for <18
 
 else if (Age > 65){
-    price = (fullPrice - discountMax).toFixed(2);
+    fullPrice -=  (discountMax).toFixed(2);
     document.getElementById("ticket-disc").innerHTML = 'Sconto Senior'
 
 }
 //price with discount 40% for >65
 
 else{
-    price = fullPrice.toFixed(2);
+    fullPrice = fullPrice.toFixed(2);
     document.getElementById("ticket-disc").innerHTML = 'Biglietto standard'
 }
 // full price
 
-let totalPrice = price
 
 
 
-console.log(`price: ${price} €`);
+
+console.log();
 //stamp price in console
 
 document.getElementById("ticket-name").innerText = Name;
 document.getElementById("ticket-pos").innerText = Carrozza.toFixed();
 document.getElementById("ticket-codCP").innerText = CodCP.toFixed();
-document.getElementById("ticket-price").innerText = `price: ${price} €` ;
+document.getElementById("ticket-price").innerText = ` ${fullPrice} €`;
 })
 
 
